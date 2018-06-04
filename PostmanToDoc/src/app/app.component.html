@@ -67,7 +67,7 @@
                 <div class="card card_printable" >
                   <div class="card-body">
                     <h5 class="card-title">{{response.name}}</h5>
-                    <h6 class="bg-light">{{item.request.url.raw}}</h6> 
+                    <h6 class="bg-light">{{response.originalRequest.url.raw}}</h6> 
                     <br />
                     <div *ngIf="response.originalRequest.body.raw !== undefined">
                       <b>Request Body:</b>
