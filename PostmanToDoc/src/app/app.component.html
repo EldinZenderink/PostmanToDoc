@@ -1,0 +1,90 @@
+
+
+<ng-template #start let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Open Postman Json (v2.1)</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <input type="file" class="btn btn-outline-dark"  name="jsonFile" (change)="fileChanged($event)" /> <br /><br />
+      <button type="button" class="btn btn-outline-primary"  (click)="generate()">
+        Generate
+      </button>
+      <hr />
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" (click)="togglePrint()" style="margin-left: 1%">
+      <label class="form-check-label" for="defaultCheck1" style="margin-left: 4%">
+        Open print window automatically.
+      </label>
+      <br />
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" (click)="toggleDownload()" style="margin-left: 1%">
+      <label class="form-check-label" for="defaultCheck2" style="margin-left: 4%">
+        Download generated html automatically.
+      </label>
+    </form>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+
+<div #container >
+  <div class="container" *ngIf="succesfullyParsed">
+    <div class="row">
+      <div class="col">
+        <h3>{{jsonObject.info.name}}</h3>
+        <hr />
+        {{jsonObject.info.description}}
+      </div>
+    </div>
+    <hr />
+    <br />  
+    <div class="row"  *ngFor="let item of jsonObject.item">
+      <div class="col-sm-12">
+        <hr />
+        <div class="card ">
+          <div class="card-header">      
+              <h4 class="text-warning"><b>{{item.request.method}}</b></h4> <h4>{{item.name}}</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="bg-light">{{item.request.url.raw}}</h5>
+            <hr />
+              <b>Description:</b>
+              <br />
+              {{item.request.description}}
+            <hr />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Request Body:</h5>
+                  <hr />
+                  <pre [innerHtml]="item.request.body.raw | prettyjson:4"></pre>
+                </div>
+              </div>
+            <hr />
+              <h5><b>Request Examples:</b></h5>
+              <hr />
+              <div *ngFor="let response of item.response">
+                <div class="card card_printable" >
+                  <div class="card-body">
+                    <h5 class="card-title">{{response.name}}</h5>
+                    <b>Request:</b>
+                    <hr />
+                    <pre [innerHtml]="response.originalRequest.body.raw | prettyjson:4"></pre>
+                    <hr />
+                    <b>Response:</b>
+                    <hr />
+                    <pre [innerHtml]="response.body | prettyjson:4"></pre>
+                  </div>
+                </div> 
+                <hr /> 
+              </div>  
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
