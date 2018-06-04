@@ -1,0 +1,230 @@
+
+                
+                <!doctype html>
+                  <html lang="en">
+                  <head>
+                    <meta charset="utf-8">
+                    <title>PostmanToDoc</title>
+                    <base href="/">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+            
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="icon" type="image/x-icon" href="favicon.ico">
+                    <style>
+                    @media print  
+                    {
+                        .card_printable {
+                            page-break-inside: avoid;
+                        }
+                    }
+                    </style>
+                  </head>
+                  <body>
+                    
+  <!----><div _ngcontent-c0="" class="container">
+    <div _ngcontent-c0="" class="row">
+      <div _ngcontent-c0="" class="col">
+        <h3 _ngcontent-c0="">JSONPlaceholder</h3>
+        <hr _ngcontent-c0="">
+        Fake Online REST API for Testing and Prototyping 
+      </div>
+    </div>
+    <br _ngcontent-c0="">  
+    <!----><div _ngcontent-c0="" class="row">
+      <div _ngcontent-c0="" class="col-sm-12">
+        <hr _ngcontent-c0="">
+        <div _ngcontent-c0="" class="card ">
+          <div _ngcontent-c0="" class="card-header">      
+              <h4 _ngcontent-c0="" class="text-warning"><b _ngcontent-c0="">GET</b></h4> <h4 _ngcontent-c0="">Get a single post.</h4>
+          </div>
+          <div _ngcontent-c0="" class="card-body">
+            <h5 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h5>
+            <hr _ngcontent-c0="">
+              <b _ngcontent-c0="">Description:</b>
+              <br _ngcontent-c0="">
+              Gest a single post.
+            <hr _ngcontent-c0="">
+              <h5 _ngcontent-c0=""><b _ngcontent-c0="">Request Examples:</b></h5>
+              <hr _ngcontent-c0="">
+              <!----><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Get a single post that does not exist.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h6> 
+                    <br _ngcontent-c0="">
+                    <!---->
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!---->
+                    <!----><span _ngcontent-c0="" class="text-danger" style="float: right;"><b _ngcontent-c0="">404 : Not Found</b></span>
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">{}</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Get a single post.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h6> 
+                    <br _ngcontent-c0="">
+                    <!---->
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!----><span _ngcontent-c0="" class="text-success" style="float: right;"><b _ngcontent-c0="">200 : OK</b></span>
+                    <!---->
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">{
+    <span class="key">"userId":</span> <span class="number">1</span>,
+    <span class="key">"id":</span> <span class="number">1</span>,
+    <span class="key">"title":</span> <span class="string">"sunt aut facere repellat provident occaecati excepturi optio reprehenderit"</span>,
+    <span class="key">"body":</span> <span class="string">"quia et suscipitnsuscipit recusandae consequuntur expedita et cumnreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"</span>
+}</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div>  
+              </div>
+          </div>
+        </div>
+      </div><div _ngcontent-c0="" class="row">
+      <div _ngcontent-c0="" class="col-sm-12">
+        <hr _ngcontent-c0="">
+        <div _ngcontent-c0="" class="card ">
+          <div _ngcontent-c0="" class="card-header">      
+              <h4 _ngcontent-c0="" class="text-warning"><b _ngcontent-c0="">POST</b></h4> <h4 _ngcontent-c0="">Post a post.</h4>
+          </div>
+          <div _ngcontent-c0="" class="card-body">
+            <h5 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts</h5>
+            <hr _ngcontent-c0="">
+              <b _ngcontent-c0="">Description:</b>
+              <br _ngcontent-c0="">
+              Posts a post to the api end-point.
+            <hr _ngcontent-c0="">
+              <h5 _ngcontent-c0=""><b _ngcontent-c0="">Request Examples:</b></h5>
+              <hr _ngcontent-c0="">
+              <!----><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Post a post that should fail.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts</h6> 
+                    <br _ngcontent-c0="">
+                    <!----><div _ngcontent-c0="">
+                      <b _ngcontent-c0="">Request Body:</b>
+                      <br _ngcontent-c0="">
+                      <!----><span _ngcontent-c0="">Content-Type: <i _ngcontent-c0="">application/json</i></span>
+                      <hr _ngcontent-c0="">
+                      <pre _ngcontent-c0="">SHOULD FAIL</pre>
+                      <hr _ngcontent-c0="">
+                    </div>
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!---->
+                    <!----><span _ngcontent-c0="" class="text-danger" style="float: right;"><b _ngcontent-c0="">500 : Internal Server Error</b></span>
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">SyntaxError: Unexpected token # in JSON at position <span class="number">0</span>
+    at JSON.parse (&lt;anonymous&gt;)
+    at createStrictSyntaxError (/app/node_modules/body-parser/lib/types/json.js:<span class="number">157</span>:<span class="number">10</span>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:<span class="number">83</span>:<span class="number">15</span>)
+    at /app/node_modules/body-parser/lib/read.js:<span class="number">121</span>:<span class="number">18</span>
+    at invokeCallback (/app/node_modules/raw-body/index.js:<span class="number">224</span>:<span class="number">16</span>)
+    at done (/app/node_modules/raw-body/index.js:<span class="number">213</span>:<span class="number">7</span>)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:<span class="number">273</span>:<span class="number">7</span>)
+    at emitNone (events.js:<span class="number">86</span>:<span class="number">13</span>)
+    at IncomingMessage.emit (events.js:<span class="number">188</span>:<span class="number">7</span>)
+    at endReadableNT (_stream_readable.js:<span class="number">975</span>:<span class="number">12</span>)</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Succesfully post a post.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts</h6> 
+                    <br _ngcontent-c0="">
+                    <!----><div _ngcontent-c0="">
+                      <b _ngcontent-c0="">Request Body:</b>
+                      <br _ngcontent-c0="">
+                      <!----><span _ngcontent-c0="">Content-Type: <i _ngcontent-c0="">application/json</i></span>
+                      <hr _ngcontent-c0="">
+                      <pre _ngcontent-c0="">{
+    <span class="key">"title":</span> <span class="string">"foo"</span>,
+    <span class="key">"body":</span> <span class="string">"bar"</span>,
+    <span class="key">"userId":</span> <span class="number">1</span>
+}</pre>
+                      <hr _ngcontent-c0="">
+                    </div>
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!----><span _ngcontent-c0="" class="text-success" style="float: right;"><b _ngcontent-c0="">201 : Created</b></span>
+                    <!---->
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">{
+    <span class="key">"title":</span> <span class="string">"foo"</span>,
+    <span class="key">"body":</span> <span class="string">"bar"</span>,
+    <span class="key">"userId":</span> <span class="number">1</span>,
+    <span class="key">"id":</span> <span class="number">101</span>
+}</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div>  
+              </div>
+          </div>
+        </div>
+      </div><div _ngcontent-c0="" class="row">
+      <div _ngcontent-c0="" class="col-sm-12">
+        <hr _ngcontent-c0="">
+        <div _ngcontent-c0="" class="card ">
+          <div _ngcontent-c0="" class="card-header">      
+              <h4 _ngcontent-c0="" class="text-warning"><b _ngcontent-c0="">DELETE</b></h4> <h4 _ngcontent-c0="">Delete a post.</h4>
+          </div>
+          <div _ngcontent-c0="" class="card-body">
+            <h5 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h5>
+            <hr _ngcontent-c0="">
+              <b _ngcontent-c0="">Description:</b>
+              <br _ngcontent-c0="">
+              Deletes a post, Note: the resource will not be really deleted on the server but it will be faked as if.
+            <hr _ngcontent-c0="">
+              <h5 _ngcontent-c0=""><b _ngcontent-c0="">Request Examples:</b></h5>
+              <hr _ngcontent-c0="">
+              <!----><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Delete a not existing post.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h6> 
+                    <br _ngcontent-c0="">
+                    <!---->
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!---->
+                    <!----><span _ngcontent-c0="" class="text-danger" style="float: right;"><b _ngcontent-c0="">404 : Not Found</b></span>
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">{}</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div><div _ngcontent-c0="">
+                <div _ngcontent-c0="" class="card card_printable">
+                  <div _ngcontent-c0="" class="card-body">
+                    <h5 _ngcontent-c0="" class="card-title">Succesfully delete a post.</h5>
+                    <h6 _ngcontent-c0="" class="bg-light">https://jsonplaceholder.typicode.com/posts/1</h6> 
+                    <br _ngcontent-c0="">
+                    <!---->
+                    <b _ngcontent-c0="">Response:</b> 
+                    <!----><span _ngcontent-c0="" class="text-success" style="float: right;"><b _ngcontent-c0="">200 : OK</b></span>
+                    <!---->
+                    <hr _ngcontent-c0="">
+                    <pre _ngcontent-c0="">{}</pre>
+                  </div>
+                </div> 
+                <hr _ngcontent-c0=""> 
+              </div>  
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+                  </body>
+                  </html>
+    
+                
